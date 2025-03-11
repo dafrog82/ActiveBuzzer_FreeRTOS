@@ -21,7 +21,7 @@ public:
     int remainingCycles = -1;
 
     Buzzer(int pinNumber);
-    void beep(int onMs, int offMs = 0, int signals = 1, int pauseMs = 0, int cycles = -1);
+    void beep(int onMs, int offMs = 0, int signals = 1, int pauseMs = 0, int cycles = 1);
     void stop();
     bool isProcessing() const;
     ~Buzzer();
